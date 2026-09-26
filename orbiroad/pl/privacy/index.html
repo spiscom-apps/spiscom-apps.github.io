@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności – Orbiroad</title>
+<meta name="description" content="Jakie dane przetwarza aplikacja Orbiroad, gdzie są przechowywane i kiedy opuszczają telefon.">
+<link rel="icon" href="../../../assets/spiscom-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../"><img src="../../../assets/spiscom-mark.svg" alt="">Orbiroad</a>
+  <nav class="main">
+    <a href="../">Aplikacja</a>
+    <a href="./" aria-current="page">Prywatność</a>
+    <a href="../terms/">Zasady</a>
+    <a href="../support/">Pomoc</a>
+  </nav>
+  <span class="lang"><a href="../../privacy/" hreflang="en">EN</a> · PL</span>
+</div></header>
+
+<main class="wrap">
+  <h1>Polityka prywatności aplikacji Orbiroad</h1>
+  <p class="meta">Wersja 1 · obowiązuje od 26 września 2026 · dotyczy aplikacji Orbiroad na Androida (<code>com.spiscom.dashcam</code>)</p>
+
+  <h2>1. Kto odpowiada za aplikację</h2>
+  <p>Wydawcą aplikacji Orbiroad jest <strong>Spiscom</strong>, <span class="todo">[pełna nazwa i forma prawna, adres, NIP]</span>.<br>
+  Sprawy prywatności: <span class="todo">[e-mail]</span>.</p>
+
+  <h2>2. W skrócie</h2>
+  <ul>
+    <li>Orbiroad <strong>nie ma kont użytkowników, serwerów wydawcy, reklam ani analityki</strong>. Spiscom nie otrzymuje Twoich nagrań, lokalizacji ani innych danych z aplikacji.</li>
+    <li>Nagrania i dane z czujników są zapisywane <strong>tylko na Twoim telefonie</strong>, na karcie SD albo w wybranym przez Ciebie folderze.</li>
+    <li>Do internetu trafiają tylko zapytania o dane mapy OpenStreetMap dla okolicy, w której jesteś (bez identyfikatora użytkownika), oraz obsługa zakupu Orbiroad Pro przez Google Play.</li>
+    <li>Aplikacja nie rozpoznaje twarzy ani numerów rejestracyjnych.</li>
+  </ul>
+
+  <h2>3. Dane przetwarzane na telefonie</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Dane</th><th>Po co</th><th>Uwagi</th></tr>
+    <tr><td>Obraz z kamery</td><td>nagrania, tryb parkingowy (wykrywanie ruchu), odczyt znaków</td><td>zapis w plikach MP4</td></tr>
+    <tr><td>Dźwięk z mikrofonu</td><td>ścieżka dźwiękowa nagrania</td><td>domyślnie włączony; można go wyłączyć w ustawieniach albo w każdej chwili wyciszyć; w czasie rozmów telefonicznych wycisza się sam</td></tr>
+    <tr><td>Lokalizacja, prędkość, kierunek, wysokość (GPS)</td><td>nakładka na obrazie, dane trasy w pliku, ograniczenia z mapy, fotoradary, wykrywanie postoju</td><td>zapisywane w nagraniach; eksport do SRT i GPX tylko na Twoje polecenie</td></tr>
+    <tr><td>Akcelerometr i żyroskop</td><td>wykrywanie uderzeń, G-metr, stabilizacja obrazu, czuwanie na parkingu, pomiar przyspieszenia</td><td>—</td></tr>
+    <tr><td>Odczytane znaki drogowe</td><td>wyświetlanie ograniczenia prędkości</td><td>analiza obrazu odbywa się na telefonie; zapamiętywana jest tylko wartość ograniczenia</td></tr>
+    <tr><td>Stan baterii i temperatura</td><td>ochrona telefonu przed rozładowaniem i przegrzaniem</td><td>—</td></tr>
+    <tr><td>Ustawienia, historia pomiarów, pobrana mapa offline, sumy SHA-256 nagrań</td><td>działanie aplikacji</td><td>hasło podglądu na żywo jest zapisane tylko w telefonie</td></tr>
+  </table></div>
+  <p>Aplikacja ma wyłączoną systemową kopię zapasową Androida, więc jej ustawienia nie trafiają do chmury.</p>
+
+  <h2>4. Kiedy dane opuszczają telefon</h2>
+  <h3>a) Dane mapy OpenStreetMap (Overpass API)</h3>
+  <p>Gdy włączysz ograniczenia z mapy lub ostrzeganie o fotoradarach albo pobierasz mapę offline, aplikacja wysyła do publicznego serwera Overpass API zapytanie o drogi w prostokącie o wymiarach około 5 × 3,5 km.
+  Serwer otrzymuje przy tym współrzędne tego prostokąta, Twój adres IP i nazwę aplikacji z numerem wersji (np. <code>Orbiroad/0.1.0</code>). Na tej podstawie można ustalić przybliżoną okolicę, w której się znajdujesz.
+  Aplikacja nie wysyła identyfikatora użytkownika ani urządzenia.</p>
+  <p>Serwery, w kolejności, przy czym następne są używane tylko wtedy, gdy wcześniejsze nie odpowiadają: <code>overpass-api.de</code> (Niemcy), <code>maps.mail.ru</code> (Rosja), <code>overpass.kumi.systems</code>, <code>overpass.private.coffee</code>.
+  Prowadzą je niezależni operatorzy według własnych zasad. Jeśli zapytanie trafi do serwera poza UE, Twój adres IP i przybliżona okolica są przekazywane do tego kraju.</p>
+  <p>Możesz to ograniczyć: wyłącz „Dociągaj brakujące obszary przez internet” i korzystaj z mapy pobranej wcześniej albo wyłącz ograniczenia z mapy i fotoradary.</p>
+
+  <h3>b) Google Play – zakup Orbiroad Pro</h3>
+  <p>Płatność obsługuje Google w ramach Google Play. Aplikacja otrzymuje tylko potwierdzenie zakupu (identyfikator produktu i token zakupu) i sprawdza je na telefonie. Nie mamy dostępu do Twoich danych płatniczych.
+  Zasady Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+  <h3>c) Podgląd na żywo (kamera monitoringu)</h3>
+  <p>Funkcja jest domyślnie wyłączona. Po jej włączeniu telefon udostępnia obraz i dźwięk (RTSP oraz strona w przeglądarce) urządzeniom, które podadzą ustawione przez Ciebie hasło.
+  Połączenia są przyjmowane tylko z sieci lokalnej i z sieci VPN (np. Tailscale), bez pośrednictwa serwerów Spiscom. Tailscale to odrębna usługa z własną polityką prywatności.</p>
+
+  <h3>d) Udostępnianie nagrań</h3>
+  <p>Nagranie, napisy SRT albo trasa GPX trafiają tam, gdzie wskażesz je przez systemową funkcję udostępniania Androida.</p>
+
+  <h2>5. Uprawnienia</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Uprawnienie</th><th>Do czego</th></tr>
+    <tr><td>Aparat</td><td>nagrywanie, odczyt znaków, wykrywanie ruchu na parkingu</td></tr>
+    <tr><td>Mikrofon</td><td>dźwięk w nagraniu (można wyłączyć)</td></tr>
+    <tr><td>Lokalizacja (dokładna i przybliżona)</td><td>prędkość, trasa w nagraniu, ograniczenia z mapy, fotoradary, jednostki według kraju</td></tr>
+    <tr><td>Powiadomienia</td><td>stała informacja o nagrywaniu z przyciskami (zdarzenie, wyciszenie, stop)</td></tr>
+    <tr><td>Usługi pierwszoplanowe (kamera, mikrofon, lokalizacja, synchronizacja danych)</td><td>nagrywanie przy wygaszonym ekranie; pobieranie mapy w tle</td></tr>
+    <tr><td>Uruchamianie po starcie telefonu</td><td>wznowienie czuwania, jeśli włączysz start po podłączeniu zasilania</td></tr>
+    <tr><td>Wyświetlanie nad innymi aplikacjami</td><td>samoczynny start nagrywania po podłączeniu zasilania (Android nie pozwala inaczej uruchomić kamery z tła)</td></tr>
+    <tr><td>Internet, stan sieci</td><td>dane mapy, Google Play, podgląd na żywo</td></tr>
+    <tr><td>Blokada uśpienia</td><td>nieprzerwane nagrywanie i czuwanie</td></tr>
+  </table></div>
+  <p>Uprawnienia możesz w każdej chwili cofnąć w ustawieniach Androida. Funkcje, które ich wymagają, przestaną wtedy działać.</p>
+
+  <h2>6. Przechowywanie i usuwanie</h2>
+  <ul>
+    <li>Nagrania w pętli są automatycznie nadpisywane według ustawionych limitów miejsca, wieku i długości.</li>
+    <li>Nagrania zdarzeń zostają do czasu, aż je usuniesz albo przekroczą osobne limity dla zdarzeń.</li>
+    <li>Wszystko możesz usunąć w przeglądarce nagrań. Pobraną mapę usuwa opcja „Usuń pobraną mapę”.</li>
+    <li>Odinstalowanie aplikacji usuwa jej ustawienia i dane wewnętrzne. Nagrania zapisane w folderze publicznym, na karcie SD, w wybranym folderze lub skopiowane do galerii mogą pozostać i trzeba je usunąć ręcznie.</li>
+  </ul>
+
+  <h2>7. Twoje nagrania a prawa innych osób</h2>
+  <p>Nagrania mogą zawierać wizerunki osób, numery rejestracyjne i głosy pasażerów, czyli dane osobowe. Za to, jak ich używasz, odpowiadasz Ty.</p>
+  <ul>
+    <li>Przed publikacją nagrania zamaż twarze i numery rejestracyjne osób postronnych.</li>
+    <li>Poinformuj pasażerów, że rejestrator nagrywa dźwięk, albo go wycisz.</li>
+    <li>W niektórych krajach używanie wideorejestratorów lub nagrywanie dźwięku jest ograniczone (np. Austria, Luksemburg), a ostrzeganie o fotoradarach może być zabronione. Sprawdź przepisy kraju, w którym jedziesz.</li>
+  </ul>
+
+  <h2>8. Podstawa prawna i Twoje prawa</h2>
+  <p>Spiscom nie gromadzi danych z aplikacji, więc zwykle nie mamy czego udostępnić ani usunąć. Dane w telefonie kontrolujesz Ty.
+  Zapytania do serwerów mapy są wysyłane, żeby dostarczyć wybraną przez Ciebie funkcję (art. 6 ust. 1 lit. b RODO).</p>
+  <p>Przysługuje Ci prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu oraz skargi do Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>) lub organu nadzorczego w Twoim kraju.
+  Jeśli piszesz do nas e-mailem, Twój adres i treść wiadomości przechowujemy tylko na potrzeby odpowiedzi.</p>
+
+  <h2>9. Dzieci</h2>
+  <p>Aplikacja jest przeznaczona dla kierowców i nie jest skierowana do dzieci poniżej 16 lat.</p>
+
+  <h2>10. Bezpieczeństwo</h2>
+  <p>Podgląd na żywo wymaga hasła i przyjmuje połączenia tylko z adresów prywatnych i sieci VPN. Nagrania można sprawdzić sumą SHA-256, żeby potwierdzić, że plik nie był zmieniany od czasu zapisu.
+  Zadbaj o blokadę ekranu telefonu, bo nagrania są dostępne dla każdego, kto ma dostęp do urządzenia.</p>
+
+  <h2>11. Zmiany polityki</h2>
+  <p>O istotnych zmianach poinformujemy na tej stronie i w aplikacji. Każda wersja ma numer i datę obowiązywania.</p>
+</main>
+
+<footer class="site"><div class="wrap">
+  © 2026 <a href="../../../pl/">Spiscom</a> · <a href="./">Polityka prywatności</a> · <a href="../terms/">Zasady korzystania</a> · <a href="../support/">Pomoc</a><br>
+  Dane mapy © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL).
+</div></footer>
+</body>
+</html>

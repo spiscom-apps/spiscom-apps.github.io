@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – Orbiroad</title>
+<meta name="description" content="What data the Orbiroad app processes, where it is stored and when it leaves the phone.">
+<link rel="icon" href="../../assets/spiscom-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="alternate" hreflang="pl" href="../pl/privacy/">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../"><img src="../../assets/spiscom-mark.svg" alt="">Orbiroad</a>
+  <nav class="main">
+    <a href="../">App</a>
+    <a href="./" aria-current="page">Privacy</a>
+    <a href="../terms/">Terms</a>
+    <a href="../support/">Support</a>
+  </nav>
+  <span class="lang">EN · <a href="../pl/privacy/" hreflang="pl">PL</a></span>
+</div></header>
+
+<main class="wrap">
+  <h1>Orbiroad privacy policy</h1>
+  <p class="meta">Version 1 · effective 26 September 2026 · applies to the Orbiroad Android app (<code>com.spiscom.dashcam</code>)</p>
+
+  <h2>1. Who is responsible</h2>
+  <p>Orbiroad is published by <strong>Spiscom</strong>, <span class="todo">[full legal name and form, address, tax ID]</span>.<br>
+  Privacy contact: <span class="todo">[e-mail]</span>.</p>
+
+  <h2>2. Summary</h2>
+  <ul>
+    <li>Orbiroad has <strong>no user accounts, no developer servers, no ads and no analytics</strong>. Spiscom does not receive your recordings, location or any other app data.</li>
+    <li>Recordings and sensor data are stored <strong>only on your phone</strong>, on an SD card or in a folder you choose.</li>
+    <li>The only data sent over the internet are OpenStreetMap map queries for the area around you (without any user identifier) and Google Play handling your Orbiroad Pro purchase.</li>
+    <li>The app does not recognise faces or licence plates.</li>
+  </ul>
+
+  <h2>3. Data processed on your phone</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Data</th><th>Purpose</th><th>Notes</th></tr>
+    <tr><td>Camera image</td><td>recordings, parking mode motion detection, sign recognition</td><td>saved in MP4 files</td></tr>
+    <tr><td>Microphone audio</td><td>recording soundtrack</td><td>on by default; can be turned off in settings or muted at any time; muted automatically during phone calls</td></tr>
+    <tr><td>Location, speed, heading, altitude (GPS)</td><td>video overlay, route data in the file, map speed limits, speed cameras, stop detection</td><td>stored in recordings; SRT and GPX export only when you request it</td></tr>
+    <tr><td>Accelerometer and gyroscope</td><td>impact detection, G-meter, image stabilisation, parking watch, acceleration timing</td><td>—</td></tr>
+    <tr><td>Recognised road signs</td><td>showing the speed limit</td><td>image analysis runs on the phone; only the limit value is kept</td></tr>
+    <tr><td>Battery level and temperature</td><td>protecting the phone from running flat and overheating</td><td>—</td></tr>
+    <tr><td>Settings, timing history, offline map, SHA-256 checksums of recordings</td><td>app operation</td><td>the live view password is stored only on the phone</td></tr>
+  </table></div>
+  <p>Android system backup is disabled for the app, so its settings are not uploaded to the cloud.</p>
+
+  <h2>4. When data leaves your phone</h2>
+  <h3>a) OpenStreetMap data (Overpass API)</h3>
+  <p>If you turn on map speed limits or speed camera warnings, or download an offline map, the app sends a public Overpass API server a query for roads within a rectangle of about 5 × 3.5 km.
+  The server receives the rectangle's coordinates, your IP address and the app name with its version (e.g. <code>Orbiroad/0.1.0</code>). From this, your approximate area can be inferred.
+  No user or device identifier is sent.</p>
+  <p>Servers, in order, with the later ones used only when the earlier ones do not respond: <code>overpass-api.de</code> (Germany), <code>maps.mail.ru</code> (Russia), <code>overpass.kumi.systems</code>, <code>overpass.private.coffee</code>.
+  They are run by independent operators under their own terms. If a query goes to a server outside the EU, your IP address and approximate area are transferred to that country.</p>
+  <p>To limit this, turn off “Fetch missing areas over the internet” and use a map downloaded in advance, or turn off map limits and speed cameras.</p>
+
+  <h3>b) Google Play – Orbiroad Pro purchase</h3>
+  <p>Payment is handled by Google through Google Play. The app only receives the purchase confirmation (product ID and purchase token) and verifies it on the phone. We never see your payment details.
+  Google's policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+  <h3>c) Live view (monitoring camera)</h3>
+  <p>This feature is off by default. When you turn it on, the phone streams image and audio (RTSP and a browser page) to devices that provide the password you set.
+  Connections are accepted only from the local network and VPN networks (e.g. Tailscale), never through Spiscom servers. Tailscale is a separate service with its own privacy policy.</p>
+
+  <h3>d) Sharing recordings</h3>
+  <p>A recording, SRT subtitles or a GPX route goes wherever you send it with Android's share function.</p>
+
+  <h2>5. Permissions</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Permission</th><th>Used for</th></tr>
+    <tr><td>Camera</td><td>recording, sign recognition, parking motion detection</td></tr>
+    <tr><td>Microphone</td><td>audio in recordings (can be turned off)</td></tr>
+    <tr><td>Location (precise and approximate)</td><td>speed, route in recordings, map limits, speed cameras, units by country</td></tr>
+    <tr><td>Notifications</td><td>ongoing recording notification with buttons (incident, mute, stop)</td></tr>
+    <tr><td>Foreground services (camera, microphone, location, data sync)</td><td>recording with the screen off; downloading the map in the background</td></tr>
+    <tr><td>Run at startup</td><td>resuming standby if you enable start on power connection</td></tr>
+    <tr><td>Display over other apps</td><td>automatic recording start when power is connected (Android does not allow starting the camera from the background otherwise)</td></tr>
+    <tr><td>Internet, network state</td><td>map data, Google Play, live view</td></tr>
+    <tr><td>Prevent sleep</td><td>uninterrupted recording and standby</td></tr>
+  </table></div>
+  <p>You can revoke permissions at any time in Android settings. Features that need them will then stop working.</p>
+
+  <h2>6. Retention and deletion</h2>
+  <ul>
+    <li>Loop recordings are overwritten automatically according to your storage, age and length limits.</li>
+    <li>Incident recordings are kept until you delete them or they exceed the separate incident limits.</li>
+    <li>You can delete everything in the recordings browser. “Delete the downloaded map” removes the offline map.</li>
+    <li>Uninstalling the app removes its settings and internal data. Recordings saved in a public folder, on an SD card, in a chosen folder or copied to the gallery may remain and must be deleted manually.</li>
+  </ul>
+
+  <h2>7. Your recordings and other people's rights</h2>
+  <p>Recordings may contain other people's faces, licence plates and passengers' voices, which are personal data. You are responsible for how you use them.</p>
+  <ul>
+    <li>Before publishing a recording, blur the faces and licence plates of bystanders.</li>
+    <li>Tell passengers that audio is being recorded, or mute it.</li>
+    <li>Some countries restrict dashcam use or audio recording (e.g. Austria, Luxembourg), and warning about speed cameras may be prohibited. Check the rules of the country you are driving in.</li>
+  </ul>
+
+  <h2>8. Legal basis and your rights</h2>
+  <p>Spiscom does not collect data from the app, so there is usually nothing for us to provide or delete. You control the data on your phone.
+  Map queries are sent to provide a feature you have chosen (Art. 6(1)(b) GDPR).</p>
+  <p>You have the right to access, rectify, erase and restrict processing of your data, to object, and to lodge a complaint with a data protection authority: in Poland, the President of the Personal Data Protection Office (<a href="https://uodo.gov.pl/en">uodo.gov.pl</a>), or the authority in your country.
+  If you e-mail us, we keep your address and message only to reply.</p>
+
+  <h2>9. Children</h2>
+  <p>The app is intended for drivers and is not directed at children under 16.</p>
+
+  <h2>10. Security</h2>
+  <p>Live view requires a password and accepts connections only from private addresses and VPN networks. A recording's SHA-256 checksum confirms that the file has not been changed since it was saved.
+  Keep your phone's screen lock on, because recordings are accessible to anyone with access to the device.</p>
+
+  <h2>11. Changes</h2>
+  <p>We will announce significant changes on this page and in the app. Each version has a number and an effective date.</p>
+</main>
+
+<footer class="site"><div class="wrap">
+  © 2026 <a href="../../">Spiscom</a> · <a href="./">Privacy policy</a> · <a href="../terms/">Terms of use</a> · <a href="../support/">Support</a><br>
+  Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL).
+</div></footer>
+</body>
+</html>
