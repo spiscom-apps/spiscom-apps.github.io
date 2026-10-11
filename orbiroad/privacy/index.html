@@ -23,7 +23,7 @@
 
 <main class="wrap">
   <h1>Orbiroad privacy policy</h1>
-  <p class="meta">Version 1 · effective 26 September 2026 · applies to the Orbiroad Android app (<code>com.spiscom.dashcam</code>)</p>
+  <p class="meta">Version 2 · effective 11 October 2026 · applies to the Orbiroad Android app (<code>com.spiscom.orbiroad</code>)</p>
 
   <h2>1. Who is responsible</h2>
   <p>Orbiroad is published by <strong>Spiscom</strong>, <span class="todo">[full legal name and form, address, tax ID]</span>.<br>
@@ -52,11 +52,11 @@
 
   <h2>4. When data leaves your phone</h2>
   <h3>a) OpenStreetMap data (Overpass API)</h3>
-  <p>If you turn on map speed limits or speed camera warnings, or download an offline map, the app sends a public Overpass API server a query for roads within a rectangle of about 5 × 3.5 km.
-  The server receives the rectangle's coordinates, your IP address and the app name with its version (e.g. <code>Orbiroad/0.1.0</code>). From this, your approximate area can be inferred.
+  <p>Map speed limits, speed camera warnings and fetching missing areas over the internet are <strong>on by default</strong>. While they are on, and when you download an offline map, the app sends a public Overpass API server a query for roads within a rectangle of about 5 × 3.5 km around you.
+  The server receives the rectangle's coordinates, your IP address and the app name with its version (e.g. <code>Orbiroad/1.0.0</code>). From this, your approximate area can be inferred.
   No user or device identifier is sent.</p>
-  <p>Servers, in order, with the later ones used only when the earlier ones do not respond: <code>overpass-api.de</code> (Germany), <code>maps.mail.ru</code> (Russia), <code>overpass.kumi.systems</code>, <code>overpass.private.coffee</code>.
-  They are run by independent operators under their own terms. If a query goes to a server outside the EU, your IP address and approximate area are transferred to that country.</p>
+  <p>Servers, in order, with the later ones used only when the earlier ones do not respond: <code>overpass-api.de</code> (Germany), <code>overpass.kumi.systems</code> (Austria), <code>overpass.private.coffee</code> (Austria).
+  All of them are in the European Union. They are run by independent operators under their own terms and may keep your IP address and queries in their server logs.</p>
   <p>To limit this, turn off “Fetch missing areas over the internet” and use a map downloaded in advance, or turn off map limits and speed cameras.</p>
 
   <h3>b) Google Play – Orbiroad Pro purchase</h3>
